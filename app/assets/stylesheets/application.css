@@ -1,3 +1,65 @@
+h1 {
+	padding-top: 50px;
+}
+
+.home a {
+	color: white !important;
+	text-decoration: none;
+}
+
+
+/*Footer*/
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 142px; 
+}
+
+
+footer p{
+	text-align: center;
+	padding-top: 10px;
+}
+
+.fa {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.social {
+	font-size: 40px;
+}
+
+.social {
+	background-color: grey;
+	text-align: center;
+}
+
+.social a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.footer a:visted{
+	color: blue;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
