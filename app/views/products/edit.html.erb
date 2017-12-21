@@ -1,0 +1,10 @@
+<div class="container edit_page">
+
+  <h1>Editing Product</h1>
+
+  <%= render 'form', product: @product %>
+
+  <button class="edit"><%= link_to 'Show', @product %></button>
+  <button class="edit"><%= link_to 'Back', products_path %></button>
+
+</div>
