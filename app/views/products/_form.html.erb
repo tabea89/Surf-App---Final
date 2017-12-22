@@ -28,6 +28,18 @@
       </tr>
       <tr>
         <div class="field">
+          <th><%= form.label :colour %></th>
+          <td><%= form.text_field :colour %></td>
+        </div>
+      </tr>
+      <tr>
+        <div class="field">
+          <th><%= form.label :price %></th>
+          <td><%= form.text_field :price %></td>
+        </div>
+      </tr>
+      <tr>
+        <div class="field">
           <th><%= form.label :image_url %></th>
           <td><%= form.text_field :image_url, id: :product_image_url %></td>
         </div>
