@@ -1,34 +1,28 @@
-<div class="container">
+
   <p id="notice"><%= notice %></p>
-  <h1>Products</h1>
 
-  <table>
-    <thead class="header">
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Image url</th>
-        
-      </tr>
-    </thead>
-    
-    <tbody>
-      <% @products.each do |product| %>
-        <tr class="product_table">
-          <td><%= product.name %></td>
-          <td><%= product.description %></td>
-          <td><%= product.image_url %></td>
-          <td><button class="action1"><%= link_to 'Show', product %></button></td>
-          <td><button><%= link_to 'Edit', edit_product_path(product) %></button></td>
-          <td><button><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></button></td> 
-        </tr>
-      <% end %>
-
-    </tbody>
-  </table>
-
-  <br>
-
+<div class="container product_overview">
+  <h1 class="product_header">Products</h1>
   <button class="add_product"><%= link_to 'New Product', new_product_path %></button>
-
+  <div class="row">
+    <% @products.each do |product| %>
+      <div class="col-sm-2 col-md-4">
+        <%= image_tag("Teufelsberg.jpg", class:"img-responsive") %>
+        <a href="#"><h1><%= product.name %></h1></a>
+        <p><%= product.description %></p>
+        <p>Colour: <%= product.colour %></p>
+        <p>Price: <%= product.price %> $</p><hr>
+        <button class="edit_product"><%= link_to 'Show', product %></button>
+        <button class="edit_product"><%= link_to 'Edit', edit_product_path(product) %></button>
+        <button class="edit_product"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+      </div><!-- /col -->
+    <% end %>
+  </div>
 </div>
+
+
+
+
+
+
+
