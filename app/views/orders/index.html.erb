@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row order_overview">
+    <% @orders.each do |order| %>
+      <div class="col-sm-2 col-md-4">
+        <h1 class="heading">
+          Order # <%= order.id %>:
+          <%= link_to order.product.name, order.product %>
+        </h1>
+        <% if order.product.image_url %>
+        <%= image_tag(order.product.image_url, class:"img-responsive") %>
+        <% end %>
+        <p><%= order.product.description %></p>
+        <strong>$ <%= order.product.price %></strong>
+      </div><!-- /col -->
+    <% end %>
+  </div>
+</div>
