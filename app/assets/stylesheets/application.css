@@ -1,3 +1,10 @@
+.inner-item {
+    text-align: center;
+    img {
+        margin: 0 auto;
+    }
+}
+
 .heading {
   padding-top: 50px;
 }
@@ -5,6 +12,11 @@
 .home a {
 	color: white !important;
 	text-decoration: none;
+}
+
+/*Orders*/
+.order_overview {
+  margin-bottom: 30px;
 }
 
 /*Products Show*/
