@@ -26,16 +26,16 @@
             <span class="icon-bar"></span>
           </button>
         <div class="home navbar-brand">
-          <a href="#home">Home</a>
+          <a href="/home">Home</a>
         </div> <!--end Home -->
       </div> <!--end navbar-header -->
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">About</a></li>
-            <li><a href="products">Products</a></li>
-            <li><a href="orders">Orders</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><%= link_to "About", about_path %></li>
+            <li><%= link_to "Products", products_path %></li>
+            <li><%= link_to "Orders", orders_path %></li>
+            <li><%= link_to "Contact", contact_path %></li>
           </ul>
         </div> <!--end navbar collapse-->
 
