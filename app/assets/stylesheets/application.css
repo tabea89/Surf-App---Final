@@ -1,27 +1,57 @@
+/*General*/
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.heading {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #F08080;
+
+}
+
+.img_fullscreen {
+  width: 100%;
+  height: 500px;
+}
+
+/*Navbar*/
+.navbar {
+  background-color: #baffc9;
+}
+
+.navbar {
+  border-style: none;
+}
+
 .search_field {
   margin-top: 11px;
 }
 
-.heading {
-  padding-top: 50px;
-}
-
-.home a {
-	color: white !important;
+.home a{
+	color: black !important;
 	text-decoration: none;
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
 }
 
+.nav_link a{
+  font-family: 'Pacifico', cursive;
+  color: black !important;
+  font-size: 1.5em;
+}
+
+/*Carousel*/
 .img-slider {
   height: 400px;
   width: auto;
 }
 
-.img_fullscreen {
-  width: 100%;
-  height: auto;
-}
-
-/*Carousel*/
 .inner-item {
     text-align: center;
     img {
@@ -31,6 +61,46 @@
 
 .carousel {
   margin-bottom: 50px;
+}
+
+/*About*/
+.img_text {
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -180%);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    border: solid 2px white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+}
+
+.main {
+  text-align: center;
+}
+
+.main p{
+  font-size: 1.3em;
+}
+
+.cta a{
+  padding: 18px 45px;
+  background-color: #f1cbff;
+  color: black;
+  font-size: 1.2em;
+}
+
+.cta {
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 /*Orders*/
@@ -53,7 +123,6 @@
 }
 
 /*Products Edit*/
-
 .left {
   float: left;
 }
@@ -87,11 +156,6 @@ hr {
   border-color: black;
 }
 
-.product_header {
-  padding-top: 50px;
-  padding-bottom: 10px;
-}
-
 .add_product {
   margin-bottom: 20px;
 }
@@ -119,23 +183,17 @@ hr {
 
 /*Footer*/
 
-* {
-  margin: 0;
-}
-
-html, body {
-  height: 100%;
-}
-
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -142px; 
 }
+
 .page-wrap:after {
   content: "";
   display: block;
 }
+
 .site-footer, .page-wrap:after {
   height: 142px; 
 }
@@ -147,10 +205,10 @@ footer p{
 }
 
 .fa {
-    padding: 20px;
-    color: white;
-    text-decoration: none;
-    border-radius: 50%;
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+  border-radius: 50%;
 }
 
 .social {
@@ -158,13 +216,12 @@ footer p{
 }
 
 .social {
-	background-color: grey;
 	text-align: center;
 }
 
 .social a:hover {
 	text-decoration: none;
-	color: black;
+	color: #6495ED;
 }
 
 .footer a:visted{
