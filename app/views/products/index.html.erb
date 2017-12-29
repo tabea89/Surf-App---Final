@@ -2,10 +2,12 @@
   <p id="notice"><%= notice %></p>
 
 <div class="container product_overview">
-  <h1 class="product_header">Products</h1>
-</div>
+  <h1 class="heading">Products</h1>
 
-<div class="container">
+
+<%= render 'slideshow', product: @product %>
+
+
   <button class="add_product"><%= link_to 'New Product', new_product_path %></button>
   <div class="row">
     <%= render @products %>

@@ -1,6 +1,13 @@
-<div class="container">
-  <h1 class="heading">About</h1>
-  <p>Welcome to our shop! Here you find everything that the surferheart desires.<br><%= link_to 'Have a look around!', products_path %></p>
+<div class="container img_text">
+  <%= image_tag(image_url('boards.jpg'), class:"heading img_fullscreen") %>
+  <div class="centered">
+	<h2>About</h2>
+  </div>
+</div>
+<div class="container main">
+  <p>Welcome to our shop! Here you find everything the surferheart desires.<br></p>
+  <div class="cta">
+	<%= link_to 'Go to shop', products_path %>
+  </div>
 </div>
 
-<img src="https://images6.alphacoders.com/431/thumb-1920-431411.jpg" alt="boards" class="img_fullscreen">
