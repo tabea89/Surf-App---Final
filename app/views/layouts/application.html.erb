@@ -32,6 +32,10 @@
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+            <li class="search_field"><%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+              <%= form.text_field :q, id: 'q', value: params[:q], placeholder:"E.g. longboard" %>
+              <%= form.submit 'Search', class:"btn btn-sm" %>
+               <% end %></li>
             <li><%= link_to "About", about_path %></li>
             <li><%= link_to "Products", products_path %></li>
             <li><%= link_to "Orders", orders_path %></li>
