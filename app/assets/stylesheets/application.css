@@ -12,7 +12,10 @@ html, body {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #F08080;
+}
 
+.extra {
+  padding-top: 100px;
 }
 
 .img_fullscreen {

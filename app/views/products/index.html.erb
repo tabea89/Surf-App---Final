@@ -1,8 +1,12 @@
-
-  <p id="notice"><%= notice %></p>
+<div class="container img_text">
+  <%= image_tag(image_url('wave.jpg'), class:"heading img_fullscreen") %>
+  <div class="centered">
+	<h2>Products</h2>
+  </div>
+</div>
 
 <div class="container product_overview">
-  <h1 class="heading">Products</h1>
+<p id="notice"><%= notice %></p>
 
 
 <%= render 'slideshow', product: @product %>
