@@ -7,7 +7,7 @@
 
 <div class="container">
   <h2>Contact Us</h2>
-  <div class="col-md-6">
+  <div class="col-md-6 .col-sm-12">
   	<h3>Telephone</h3>
   	  <p>015770821647</p>
   	<h3>Email</h3>
@@ -18,7 +18,7 @@
 
 	<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
 	<div class="row">
-	  <div class="col-md-6">
+	  <div class="col-md-6 .col-sm-">
 	  <div class="form-group">
 	    <%= form.label :name %>
 	    <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
