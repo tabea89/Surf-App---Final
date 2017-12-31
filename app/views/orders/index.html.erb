@@ -10,7 +10,7 @@
         <%= image_tag(order.product.image_url, class:"img-responsive") %>
         <% end %>
         <p><%= order.product.description %></p>
-        <strong>$ <%= order.product.price %></strong>
+        <strong>$ <%= order.total %></strong>
       </div><!-- /col -->
     <% end %>
   </div>

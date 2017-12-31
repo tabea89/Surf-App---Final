@@ -6,7 +6,7 @@
   <p><%= product.description %></p>
   <p>Colour: <%= product.colour %></p>
   <p>Price: <%= product.price %> $</p><hr>
-  <button class="edit_product btn btn-neutral"><%= link_to 'Show', product %></button>
-  <button class="edit_product btn btn-neutral"><%= link_to 'Edit', edit_product_path(product) %></button>
-  <button class="edit_product btn btn-danger"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+  <%= link_to 'Show', product, class: 'edit_product btn btn-neutral' %>
+  <%= link_to 'Edit', edit_product_path(product), class: 'edit_product btn btn-neutral' %>
+  <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: 'edit_product btn btn-danger' %></button>
 </div><!-- /col -->

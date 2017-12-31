@@ -4,7 +4,7 @@
 
   <%= render 'form', product: @product %>
 
-  <button class="edit"><%= link_to 'Show', @product %></button>
-  <button class="edit"><%= link_to 'Back', products_path %></button>
+  <%= link_to 'Show', @product, class: 'btn btn-default edit' %></button>
+  <%= link_to 'Back', products_path, class: 'btn btn-default edit' %></button>
 
 </div>
