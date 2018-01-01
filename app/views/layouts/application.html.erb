@@ -16,8 +16,6 @@
   </head>
 
   <body>
-    <p class="notics"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
 
   	<!--navbar starts here-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -44,9 +42,7 @@
             <li class="nav_link"><%= link_to "Products", products_path %></li>
             <li class="nav_link"><%= link_to "Orders", orders_path %></li>
             <li class="nav_link"><%= link_to "Contact", contact_path %></li>
-          </ul>
-          <ul class="nav pull-right">
-            <li>
+            <li class="nav_link">
               <% if user_signed_in? %>
                 <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
               <% else %>
@@ -58,6 +54,14 @@
 
       </div> <!-- end nav container-->
     </nav> <!-- end navbar-->
+
+    <% if alert %>
+      <p id="alert" class="alert alert-danger"><%= alert %></p>
+    <% end %>
+
+    <% if notice %>
+      <p id="notice" class="alert alert-info"><%= notice %></p>
+    <% end %>
 
     <%= yield %>
 
