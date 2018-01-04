@@ -23,6 +23,12 @@ html, body {
   height: 500px;
 }
 
+.notification {
+  margin: auto;
+  width: 40%;
+  text-align: center;
+}
+
 /*Navbar*/
 .navbar {
   background-color: #baffc9;
