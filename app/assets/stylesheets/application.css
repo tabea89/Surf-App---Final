@@ -239,6 +239,33 @@ hr {
   padding-bottom: 15px;
 }
 
+<<<<<<< HEAD
+/*Show Product*/
+
+.product_header {
+  font-family: 'Pacifico', cursive;
+  background-color: #f1cbff;
+  width: 50%;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.show_btn {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.show_edit {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.comment_new {
+  padding-right: 30px;
+}
+
+=======
+>>>>>>> authentication2
 
 /*Footer*/
 

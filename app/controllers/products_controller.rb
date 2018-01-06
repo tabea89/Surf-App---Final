@@ -10,7 +10,8 @@ class ProductsController < ApplicationController
     else
       @products = Product.all
     end
-end
+
+  end
 
   # GET /products/1
   # GET /products/1.json
@@ -64,6 +65,12 @@ end
       format.html { redirect_to products_url, notice: 'Product was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  # GET /products/1
+  # GET /products/1.json
+  def show
+    @comments = @product.comments.order("created_at DESC")
   end
 
   private
