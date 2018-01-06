@@ -16,8 +16,6 @@
   </head>
 
   <body>
-    <p class="notics"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
 
   	<!--navbar starts here-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -68,6 +66,14 @@
     <%= notice %>
    </div>
    <% end %>
+
+    <% if alert %>
+      <p id="alert" class="alert alert-danger"><%= alert %></p>
+    <% end %>
+
+    <% if notice %>
+      <p class="notice alert alert-info"><%= notice %></p>
+    <% end %>
 
     <%= yield %>
 
