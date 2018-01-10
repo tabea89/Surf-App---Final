@@ -11,5 +11,7 @@
             <p><%= comment.body %></p>
         </div>
     <% end %>
-    <%= will_paginate @comments %>
+    <div class="digg_pagination">
+      <%= will_paginate @comments, :page_links => false %>
+    </div>
 </div>

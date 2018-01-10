@@ -10,15 +10,19 @@
 
     <div class="col-md-6 col-sm-12">
       <h2 class="product_header"><%= @product.name %></h2>
-      <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+      <h4><strong><%= @product.price %> $</strong></h4>
+      <div class="rated" data-score="<%= @product.average_rating %>"></div><br>
+      <p><strong>Description: </strong></p>
     	<p><%= @product.description %>
       <p><strong>Colour: </strong><%= @product.colour %></p>
-      <p><strong>Price: </strong><%= @product.price %> $</p>
      	<p><strong>Product URL: </strong><%= @product.image_url %></p>
       <div class="show_btn">
         <%= link_to '', products_path, class: 'show_edit btn btn-default glyphicon glyphicon-backward' %>
         <%= link_to '', edit_product_path(@product), class: 'show_edit btn btn-default glyphicon glyphicon-edit' %>
       </div>
+      <div class="cta">
+        <%= link_to 'Add to basket', products_path %>
+       </div>
     </div>
 
     <div class="row">
