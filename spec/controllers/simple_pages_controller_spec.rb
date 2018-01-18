@@ -1,11 +1,11 @@
 require 'rails_helper'
 
 describe SimplePagesController, type: :controller do
-  context 'GET #index' do
+  context 'GET #landing_page' do
     it 'renders the index template' do
-      get :index
+      get :landing_page
       expect(response).to be_ok
-      expect(response).to render_template('index')
+      expect(response).to render_template('landing_page')
     end
   end
 end
