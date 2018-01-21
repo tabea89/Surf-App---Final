@@ -4,5 +4,5 @@
   data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
   data-name="Checkout"
   data-description="<%= @product.name %> - <%= @product.price %>$"
-  data-amount="2000">
+  data-amount=<%= @product.price*100 %>>
 </script>
