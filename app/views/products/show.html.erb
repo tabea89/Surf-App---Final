@@ -23,6 +23,9 @@
       <div class="cta">
         <%= link_to 'Add to basket', products_path %>
        </div>
+       <%= form_with(url: '/payments/create') do |form| %>
+         <%= render partial: "shared/stripe_checkout_button" %>
+       <% end %>
     </div>
 
     <div class="row">
