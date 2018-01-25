@@ -1,0 +1,383 @@
+/*General*/
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.heading {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #F08080;
+}
+
+.alert {
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  max-width: 300px;
+}
+
+.extra {
+  padding-top: 100px;
+}
+
+.img_fullscreen {
+  width: 100%;
+  height: 500px;
+}
+
+/*Navbar*/
+.navbar {
+  background-color: #baffc9;
+}
+
+.navbar {
+  border-style: none;
+}
+
+.search_field {
+  margin-top: 11px;
+}
+
+.home a{
+	color: black !important;
+	text-decoration: none;
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+}
+
+.nav_link a{
+  font-family: 'Pacifico', cursive;
+  color: black !important;
+  font-size: 1.5em;
+}
+
+/*Carousel*/
+.img-slider {
+  height: 400px;
+  width: auto;
+}
+
+.inner-item {
+    text-align: center;
+    img {
+        margin: 0 auto;
+    }
+}
+
+.carousel {
+  margin-bottom: 50px;
+}
+
+/*About*/
+.img_text {
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -180%);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    border: solid 2px white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+}
+
+.main {
+  text-align: center;
+}
+
+.main p{
+  font-size: 1.3em;
+}
+
+.cta a{
+  padding: 18px 45px;
+  background-color: #f1cbff;
+  color: black;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.cta {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+/*Orders*/
+.order_overview {
+  margin-bottom: 30px;
+}
+
+/*Products Show*/
+.show_product td {
+  padding-left: 20px;
+}
+
+.show_product {
+  margin-top: 70px;
+}
+
+.show_product button{
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+/*Products Edit*/
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.update {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.edit {
+  margin-bottom: 30px;
+}
+
+.product_edit td{
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+/*Products*/
+
+.img-responsive {
+  height: 240px;
+  width: auto;
+}
+
+hr {
+  border-color: black;
+}
+
+.add_product {
+  margin-bottom: 20px;
+}
+
+.edit_product {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-neutral {
+  background-color: #808080;
+}
+
+.btn-neutral:hover {
+  background-color: #696969;
+}
+
+.btn a{
+  color: white;
+}
+
+.btn a:hover{
+  text-decoration: none;
+}
+
+/*Authentication*/
+.login {
+  position: relative;
+  height: 400px;
+}
+
+.login_fields {
+  width: 400px;
+  height: auto;
+  text-align: center;
+  position: absolute;
+  background-color: #f1cbff;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+}
+
+.login_fields h2{
+  font-family: 'Pacifico', cursive;
+  padding-bottom: 10px;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.field input{
+  background-color: white !important;
+}
+
+.actions {
+  padding-bottom: 15px;
+}
+
+.actions {
+  padding-top: 10px;
+}
+
+.aut_action {
+  color: black;
+}
+
+.aut_action:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+.other_links {
+  padding-bottom: 15px;
+}
+
+/*Show Product*/
+
+.product_header {
+  font-family: 'Pacifico', cursive;
+  background-color: #f1cbff;
+  width: 50%;
+  padding: 10px 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.show_btn {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.show_edit {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.digg_pagination {
+  background: white;
+  cursor: default;
+  /* self-clearing method: */ }
+  .digg_pagination a, .digg_pagination span, .digg_pagination em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px; }
+  .digg_pagination .disabled {
+    color: #999999;
+    border: 1px solid #dddddd; }
+  .digg_pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    background: #2e6ab1;
+    color: white;
+    border: 1px solid #2e6ab1; }
+  .digg_pagination a {
+    text-decoration: none;
+    color: #105cb6;
+    border: 1px solid #9aafe5; }
+    .digg_pagination a:hover, .digg_pagination a:focus {
+      color: #000033;
+      border-color: #000033; }
+  .digg_pagination .page_info {
+    background: #2e6ab1;
+    color: white;
+    padding: 0.4em 0.6em;
+    width: 22em;
+    margin-bottom: 0.3em;
+    text-align: center; }
+    .digg_pagination .page_info b {
+      color: #000033;
+      background: #6aa6ed;
+      padding: 0.1em 0.25em; }
+  .digg_pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  * html .digg_pagination {
+    height: 1%; }
+  *:first-child + html .digg_pagination {
+    overflow: hidden; }
+
+.big {
+  
+}
+
+/*Footer*/
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.site-footer, .page-wrap:after {
+  height: 142px; 
+}
+
+
+footer p{
+	text-align: center;
+	padding-top: 10px;
+}
+
+.fa {
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.social {
+	font-size: 40px;
+}
+
+.social {
+	text-align: center;
+}
+
+.social a:hover {
+	text-decoration: none;
+	color: #6495ED;
+}
+
+.footer a:visted{
+	color: blue;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
