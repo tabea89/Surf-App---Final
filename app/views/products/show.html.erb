@@ -3,6 +3,7 @@
   
   <div class="row">
     <div class="col-md-6 col-sm-12">
+      <% cache @product do %>
       <% if @product.image_url %>
         <%= image_tag(@product.image_url, data_zoom_image: @product.image_url, width: "300", class: "img-zoom") %>
       <% end %>
@@ -16,6 +17,7 @@
     	<p><%= @product.description %>
       <p><strong>Colour: </strong><%= @product.colour %></p>
      	<p><strong>Product URL: </strong><%= @product.image_url %></p>
+      <% end %>
       <div class="show_btn">
         <%= link_to '', products_path, class: 'show_edit btn btn-default glyphicon glyphicon-backward' %>
         <%= link_to '', edit_product_path(@product), class: 'show_edit btn btn-default glyphicon glyphicon-edit' %>
