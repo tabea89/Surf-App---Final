@@ -2,14 +2,16 @@
   <p id="notice"><%= notice %></p>
   
   <div class="row">
-    <div class="col-md-6 col-sm-12">
+    <div class="col-md-1 col-sm-12">
+    </div>
+    <div class="col-md-5 col-sm-12">
       <% cache @product do %>
       <% if @product.image_url %>
         <%= image_tag(@product.image_url, data_zoom_image: @product.image_url, width: "300", class: "img-zoom") %>
       <% end %>
     </div>
 
-    <div class="col-md-6 col-sm-12">
+    <div class="col-md-5 col-sm-12">
       <h2 class="product_header"><%= @product.name %></h2>
       <h4><strong><%= @product.price %> $</strong></h4>
       <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div><br>
@@ -22,26 +24,28 @@
         <%= link_to '', products_path, class: 'show_edit btn btn-default glyphicon glyphicon-backward' %>
         <%= link_to '', edit_product_path(@product), class: 'show_edit btn btn-default glyphicon glyphicon-edit' %>
       </div>
-      <div class="cta">
-        <%= link_to 'Add to basket', products_path %>
-       </div>
-
+  
        <%= form_with(url: '/payments/create') do |form| %>
          <%= render partial: "shared/stripe_checkout_button" %>
            <%= hidden_field_tag(:product_id, @product.id) %>
        <% end %>
-
     </div>
+
+    <div class="col-md-1 col-sm-12">
+    </div>
+    
+  </div>
 
     <div class="row">
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-1 col-sm-12">
+      </div>
+      
+      <div class="col-md-10 col-sm-12">
+        <%= render 'comments'%>
         <%= render 'new_comment' %>
       </div>
-    
-      <div class="col-md-6 col-sm-12">
-        <%= render 'comments'%>
+      <div class="col-md-1 col-sm-12">
       </div>
-    </div>
-     
+    </div>   
 
 </div>

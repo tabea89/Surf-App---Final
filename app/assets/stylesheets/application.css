@@ -7,6 +7,14 @@ html, body {
   height: 100%;
 }
 
+.edit_page {
+  padding-top: 60px;
+}
+
+.edit_form {
+  padding-top: 30px;
+}
+
 .heading {
   text-align: center;
   padding-top: 30px;
@@ -87,7 +95,9 @@ html, body {
     transform: translate(-50%, -180%);
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    border: solid 2px white;
+    opacity: 0.6;
+    color: black;
+    background-color: white;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 1.5em;
@@ -134,6 +144,16 @@ html, body {
 }
 
 /*Products Edit*/
+
+.form_heading {
+  text-align: center;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding: 10px 15px;
+  font-family: 'Pacifico', cursive;
+  background-color: #f1cbff;
+}
+
 .left {
   float: left;
 }
@@ -151,9 +171,8 @@ html, body {
   margin-bottom: 30px;
 }
 
-.product_edit td{
-  padding-left: 20px;
-  padding-bottom: 5px;
+.product_edit {
+  padding-bottom: 20px;
 }
 
 /*Products*/
@@ -313,10 +332,6 @@ hr {
     height: 1%; }
   *:first-child + html .digg_pagination {
     overflow: hidden; }
-
-.big {
-  
-}
 
 /*Footer*/
 

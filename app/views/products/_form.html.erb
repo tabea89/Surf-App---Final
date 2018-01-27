@@ -1,3 +1,4 @@
+<div class="container edit_form">
 <%= form_with(model: product, local: true) do |form| %>
   <% if product.errors.any? %>
     <div id="error_explanation">
@@ -11,44 +12,41 @@
     </div>
   <% end %>
 
+  <div class="row">
+    <div class="col-md-2 col-sm-12">
+    </div>
+    <div class="col-md-5 col-sm-12">
+      <% if @product.image_url %>
+        <%= image_tag(@product.image_url, data_zoom_image: @product.image_url, width: "300", class: "img-zoom") %>
+      <% end %>
+    </div>
 
-  <div class="product_edit">
-    <table>
-      <tr>
-        <div class="field">
-          <th><%= form.label :name %></th>
-          <td><%= form.text_field :name, id: :product_name %></td>
-        </div>
-      </tr>
-      <tr>
-        <div class="field">
-          <th><%= form.label :description %></th>
-          <td><%= form.text_area :description, id: :product_description %></td>
-        </div>
-      </tr>
-      <tr>
-        <div class="field">
-          <th><%= form.label :colour %></th>
-          <td><%= form.text_field :colour %></td>
-        </div>
-      </tr>
-      <tr>
-        <div class="field">
-          <th><%= form.label :price %></th>
-          <td><%= form.text_field :price %></td>
-        </div>
-      </tr>
-      <tr>
-        <div class="field">
-          <th><%= form.label :image_url %></th>
-          <td><%= form.text_field :image_url, id: :product_image_url %></td>
-        </div>
-      </tr>
-    </table>
-  </div>
+  <div class="col-md-5 col-sm-12">
+    <div class="product_edit">
+      <%= form.label :name %><br>
+      <%= form.text_field :name, id: :product_name %><br>
+     
+      <%= form.label :description %><br>
+      <%= form.text_area :description, id: :product_description %><br>
+       
+      <%= form.label :colour %><br>
+      <%= form.text_field :colour %><br>
+      
+      <%= form.label :price %><br>
+      <%= form.text_field :price %><br>
+        
+      <%= form.label :image_url %><br>
+      <%= form.text_field :image_url, id: :product_image_url %><br>
+    </div>
 
   <div class="actions update">
     <%= form.submit class:"btn btn-primary" %>
   </div>
+
+  <%= link_to '', @product, class: 'edit_product btn btn-default glyphicon glyphicon-eye-open' %>
+  <%= link_to '', products_path, class: 'show_edit btn btn-default glyphicon glyphicon-backward' %>
+
+  </div>
+</div>
 
 <% end %>

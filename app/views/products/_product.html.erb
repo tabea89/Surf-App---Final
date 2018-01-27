@@ -1,16 +1,14 @@
 <% cache product do %>
   <div class="col-sm-2 col-md-4">
     <% if product.image_url %>
-    <%= image_tag(product.image_url, class:"img-responsive") %>
+    <%= link_to image_tag(product.image_url, class:"img-responsive"), product %>
     <% end %>
 
     <h1><%= link_to product.name, product %></h1>
-    <p><%= product.description %></p>
-    <p>Colour: <%= product.colour %></p>
-    <p>Price: <%= product.price %> $</p><hr>
-    <%= link_to 'Show', product, class: 'edit_product btn btn-default' %>
-    <%= link_to 'Edit', edit_product_path(product), class: 'edit_product btn btn-default' %>
-    <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: 'edit_product btn btn-danger' %>
+    <p><b>Price: <%= product.price %> $</b></p><hr>
+    <%= link_to '', product, class: 'edit_product btn btn-default glyphicon glyphicon-eye-open' %>
+    <%= link_to '', edit_product_path(product), class: 'edit_product btn btn-default glyphicon glyphicon-edit' %>
+    <%= link_to '', product, method: :delete, data: { confirm: 'Are you sure?' }, class: 'edit_product btn btn-danger glyphicon glyphicon-trash' %>
 
   </div><!-- /col -->
 <% end %>

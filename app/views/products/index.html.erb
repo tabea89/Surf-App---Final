@@ -8,14 +8,13 @@
 <div class="container product_overview">
 <p id="notice"><%= notice %></p>
 
-<%= render 'slideshow', product: @product %>
-
   <%= link_to 'New Product', new_product_path, class: 'btn btn-default add_product' %>
   <div class="row">
   	<% cache(cache_key_for_products) do %>
       <%= render @products %>
     <% end %>
   </div>
+  <%= render 'slideshow', product: @product %>
 </div>
 
 
