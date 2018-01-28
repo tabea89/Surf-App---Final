@@ -1,10 +1,8 @@
 <div class="product-reviews">
-    <div class="product-reviews">
-      <% @comments.each do |comment| %>
-        <%= render comment %>
-      <% end %>
-    </div>
-    <div class="digg_pagination">
-      <%= will_paginate @comments, :page_links => false %>
-    </div>
+  <% @comments.each do |comment| %>
+     <%= render comment %>
+  <% end %>
+</div>
+<div class="digg_pagination">
+  <%= will_paginate @comments, :page_links => false %>
 </div>
