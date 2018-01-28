@@ -5,7 +5,7 @@
     <% end %>
 
     <h1><%= link_to product.name, product %></h1>
-    <p><b>Price: <%= product.price %> $</b></p><hr>
+    <p><b>Price: <%= product.price %> $</b></p><hr> 
     <%= link_to '', product, class: 'edit_product btn btn-default glyphicon glyphicon-eye-open' %>
     <%= link_to '', edit_product_path(product), class: 'edit_product btn btn-default glyphicon glyphicon-edit' %>
     <%= link_to '', product, method: :delete, data: { confirm: 'Are you sure?' }, class: 'edit_product btn btn-danger glyphicon glyphicon-trash' %>

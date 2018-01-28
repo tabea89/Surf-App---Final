@@ -78,3 +78,5 @@ gem 'stripe'
 
 gem 'memcachier'
 gem 'dalli'
+
+gem 'redis-rails'
