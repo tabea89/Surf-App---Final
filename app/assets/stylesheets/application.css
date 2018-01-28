@@ -154,25 +154,17 @@ html, body {
   background-color: #f1cbff;
 }
 
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
 .update {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.edit {
-  margin-bottom: 30px;
-}
-
 .product_edit {
   padding-bottom: 20px;
+}
+
+.product_edit input{
+  margin-bottom: 15px;
 }
 
 /*Products*/
@@ -278,7 +270,7 @@ hr {
 
 .show_btn {
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .show_edit {
