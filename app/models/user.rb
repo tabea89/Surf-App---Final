@@ -8,4 +8,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 	
+  after_create { UserMailer.welcome(self).deliver_now } 
+
 end
