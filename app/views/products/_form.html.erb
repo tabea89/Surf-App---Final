@@ -24,16 +24,16 @@
   <div class="col-md-5 col-sm-12">
     <div class="product_edit">
       <%= form.label :name %><br>
-      <%= form.text_field :name, id: :product_name %><br>
+      <%= form.text_field :name, id: :product_name, :required => true %><br>
      
       <%= form.label :description %><br>
-      <%= form.text_area :description, id: :product_description %><br>
+      <%= form.text_area :description, id: :product_description, :required => true  %><br>
        
       <%= form.label :colour %><br>
-      <%= form.text_field :colour %><br>
+      <%= form.text_field :colour, :required => true %><br>
       
       <%= form.label :price %><br>
-      <%= form.text_field :price %><br>
+      <%= form.text_field :price, :required => true %><br>
         
       <%= form.label :image_url %><br>
       <%= form.text_field :image_url, id: :product_image_url %><br>
